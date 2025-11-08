@@ -28,7 +28,7 @@ const Footer = () => {
               </Stack>
             </Col>
             <Col>
-              <Nav className="flex-column fs-5">
+              <Nav className="flex-column fs-8">
                 <h4>Links</h4>
                 <NavLink
                   href="https://discord.gg/PncDrAxvkS"
@@ -57,7 +57,7 @@ const Footer = () => {
               </Nav>
             </Col>
             <Col>
-              <Nav className="flex-column fs-5">
+              <Nav className="flex-column fs-8">
                 <h4>Contact Us!</h4>
                 <NavLink href="mailto:symphoni@ucsd.edu" className="text-white">
                   symphoni@ucsd.edu

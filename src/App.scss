@@ -71,12 +71,27 @@ body {
   }
 }
 
+.cards-row1 {
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+  margin-top: 2rem;
+}
+
+
+.cards-row2 {
+  max-width: 70vw;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+  margin-top: 2rem;
+}
+
 // Home content styles
 .text-content {
   flex: 1;
   min-width: 0;
   max-width: 700px;
-  margin-top: clamp(1rem, 10vh, 10%);
+  margin-top: clamp(0.5rem, 5vh, 5%);
   margin-left: clamp(1rem, 10vw, 10%);
   margin-right: 5vw;
 
@@ -170,6 +185,33 @@ body {
 
   @media (max-width: 480px) {
     padding: 8px;
+  }
+}
+
+.card-1 {
+  transform: rotate(-2deg);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.card-2 {
+  transform: rotate(2deg);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(0deg);
+  }
+}
+
+.card-3 {
+  transform: rotate(-0.5deg);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: rotate(0deg);
   }
 }
 

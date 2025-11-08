@@ -1,10 +1,10 @@
 import Accordion from "react-bootstrap/Accordion";
 
-const Accordions = () => {
+const HomeAccordions = () => {
   return (
     <>
       <Accordion className="accordion" defaultActiveKey="-1">
-        <h3>Frequently Asked Questions</h3>
+        <h3>Frequently Asked Questions</h3> <br />
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             Do I need to have prior experience in music?
@@ -29,4 +29,4 @@ const Accordions = () => {
   );
 };
 
-export default Accordions;
+export default HomeAccordions;
