@@ -4,7 +4,13 @@
   --background: #fbc585;
   --brown: #76300e;
   font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* TODO: make css more responsive to screen size */
 
 body {
   font-family: "Lora";
@@ -37,14 +43,26 @@ body {
   transform: rotate(360deg);
 }
 
-.ssa-ucsd {
+.text-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 50vw;
   margin-top: clamp(1rem, 10vh, 10%);
   margin-left: clamp(1rem, 10vw, 10%);
-  margin-right: 1rem;
+  margin-right: 10vw;
+}
+
+.text-content p {
+  margin-top: 0.2rem;
 }
 
 .club-title {
-  font-size: clamp(2rem, 5vw + 1rem, 3.3rem);
+  font-size: 1.4rem;
+}
+
+.description {
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
 }
 
 .date {
@@ -54,7 +72,7 @@ body {
   background-color: var(--dark-background);
   border-radius: 9999px;
   padding: 8px 16px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -80,17 +98,20 @@ body {
 
 .horizontal-container {
   display: flex;
+  max-width: 70vw;
+  margin: 0 auto;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
+  padding: 16px;
 }
 
 .home-image {
-  margin-left: clamp(0.5rem, 3vw, 10%);
+  flex-shrink: 0;
+  margin-left: 0;
+  margin-right: 10vw;
   margin-top: clamp(1rem, 10vh, 5%);
-  width: min(50%, 700px);
-  max-width: 100%;
-  height: auto;
+  object-fit: cover;
+  max-width: 30vw;
   border: 3px dashed var(--dark-background);
   border-radius: 15px;
   transform: rotate(2deg);
@@ -102,7 +123,7 @@ body {
 }
 
 /* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .horizontal-container {
     flex-direction: column;
     align-items: flex-start;
@@ -110,37 +131,17 @@ body {
 
   .home-image {
     width: 100%;
-    margin-left: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 2rem;
   }
 
-  .club-title {
-    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  .description {
+    max-width: 100%;
   }
 
   .ssa-ucsd {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .date {
-    font-size: 1rem;
-    padding: 6px 12px;
-  }
-}
-
-/* Very small screens (mobile) */
-@media (max-width: 480px) {
-  .club-title {
-    font-size: clamp(1.5rem, 9vw, 2rem);
-  }
-
-  .navbar-brand {
-    font-size: 0.9rem;
-  }
-
-  .navbar-logo {
-    width: 32px;
-    height: 32px;
   }
 }
