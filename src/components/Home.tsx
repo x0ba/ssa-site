@@ -12,7 +12,7 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="/src/assets/home-image.jpeg"
+          src="/assets/home-image.jpeg"
           alt="SSA Ensemble"
           className="home-image"
         />

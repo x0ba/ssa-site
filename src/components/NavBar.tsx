@@ -33,7 +33,7 @@ const NavBar = () => {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
-              src="/src/assets/android-chrome-512x512.png"
+              src="/assets/android-chrome-512x512.png"
               alt="SSA Logo"
               className="d-inline-block align-text-top navbar-logo"
             />
