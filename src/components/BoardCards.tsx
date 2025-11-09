@@ -8,7 +8,7 @@ const BoardCards = () => {
       <Row className="row1">
         {boardMembers.map((member) => (
           <Col key={member.name} xs={12} sm={6} md={3} className="mb-4">
-            <Card className="h-100">
+            <Card className="h-100 board-card">
               <Card.Img
                 variant="top"
                 src={member.imageUrl}

@@ -32,7 +32,7 @@ const NavItems: NavItem[] = [
 const DropdownItems: NavItem[] = [
   {
     text: "Our Mission",
-    link: "#",
+    link: "/mission",
   },
   {
     text: "Board Members",

@@ -5,6 +5,7 @@ import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from "./App.tsx";
 import Board from "./components/Board.tsx";
+import Mission from "./components/Mission.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/board" element={<Board />} />
+        <Route path="/mission" element={<Mission />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
