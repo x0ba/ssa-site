@@ -1,7 +1,7 @@
 import { Card, Col, Row, Container } from "react-bootstrap";
 import { Music2, Calendar, Users } from "lucide-react";
 
-const Cards = () => {
+const HomeCards = () => {
   return (
     <>
       <Container fluid>
@@ -48,4 +48,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default HomeCards;

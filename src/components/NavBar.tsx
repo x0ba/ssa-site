@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
+export interface Props {
+  selectedItem: string;
+}
+
 export interface NavItem {
   text: string;
   link: string;
@@ -23,10 +27,14 @@ const NavItems: NavItem[] = [
     text: "Join",
     link: "#",
   },
+  {
+    text: "Board",
+    link: "/board",
+  },
 ];
 
-const NavBarComponent = () => {
-  const [selected, setSelected] = useState("Home");
+const NavBar = ({ selectedItem }: Props) => {
+  const [selected, setSelected] = useState(selectedItem);
 
   return (
     <Navbar expand="lg" className="navbar bg-primary">
@@ -59,4 +67,4 @@ const NavBarComponent = () => {
   );
 };
 
-export default NavBarComponent;
+export default NavBar;

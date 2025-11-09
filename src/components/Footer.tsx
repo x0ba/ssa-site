@@ -30,9 +30,9 @@ const Footer = () => {
                   className="footer-logo mb-2"
                   width={128}
                 />
-                {/* <h4>
+                <h4>
                   Symphonic Student <br /> Association
-                </h4> */}
+                </h4>
                 <p>© 2025 SSA @ UCSD. All rights reserved.</p>
               </Stack>
             </Col>

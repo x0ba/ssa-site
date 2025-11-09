@@ -1,12 +1,12 @@
 import HomeAccordions from "./HomeAccordions";
-import Cards from "./Cards";
+import HomeCards from "./HomeCards";
 import HomeContent from "./HomeContent";
 
 const Home = () => {
   return (
     <>
       <HomeContent />
-      <Cards />
+      <HomeCards />
       <HomeAccordions />
     </>
   );
