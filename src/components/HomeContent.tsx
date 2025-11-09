@@ -25,7 +25,7 @@ const HomeContent = () => {
           <Image
             src="/assets/hero.jpg"
             alt="SSA Ensemble"
-            className="home-image border-primary"
+            className="hero-image border-primary"
             fluid
           />
         </Col>

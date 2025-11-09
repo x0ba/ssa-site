@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 export interface Props {
   selectedItem: string;
@@ -27,9 +27,20 @@ const NavItems: NavItem[] = [
     text: "Join",
     link: "#",
   },
+];
+
+const DropdownItems: NavItem[] = [
   {
-    text: "Board",
+    text: "Our Mission",
+    link: "#",
+  },
+  {
+    text: "Board Members",
     link: "/board",
+  },
+  {
+    text: "Support",
+    link: "#",
   },
 ];
 
@@ -60,6 +71,18 @@ const NavBar = ({ selectedItem }: Props) => {
                 {item.text}
               </Nav.Link>
             ))}
+            <NavDropdown title="About" id="basic-nav-dropdown">
+              {DropdownItems.map((item) => (
+                <NavDropdown.Item
+                  href={item.link}
+                  key={item.text}
+                  active={selected === item.text}
+                  onClick={() => setSelected(item.text)}
+                >
+                  {item.text}
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>

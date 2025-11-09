@@ -7,7 +7,7 @@ import PastBoard from "./PastBoard";
 const Board = () => {
   return (
     <>
-      <NavBar selectedItem="Board" />
+      <NavBar selectedItem="Board Members" />
       <Container className="board-content" fluid>
         <BoardCards />
         <PastBoard />
