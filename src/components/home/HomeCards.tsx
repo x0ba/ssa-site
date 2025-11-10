@@ -6,7 +6,7 @@ const HomeCards = () => {
     <>
       <Container fluid>
         <Row className="cards-row1">
-          <Col xs={12} md={6} lg={4} className="mb-3 mb-lg-0">
+          <Col xs={12} md={6} lg={4} className="mb-4 mb-lg-0">
             <Card className="card-1 h-100">
               <Card.Body>
                 <Music2 size={48} className="music-icon" />
@@ -18,7 +18,7 @@ const HomeCards = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} md={6} lg={4} className="mb-3 mb-lg-0">
+          <Col xs={12} md={6} lg={4} className="mb-4 mb-md-3 mb-lg-0">
             <Card className="card-2 h-100">
               <Card.Body>
                 <Calendar size={48} className="calendar-icon" />
@@ -30,7 +30,7 @@ const HomeCards = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col xs={12} md={12} lg={4}>
+          <Col xs={12} md={12} lg={4} className="mb-4 mb-md-0">
             <Card className="card-3 h-100">
               <Card.Body>
                 <Users size={48} className="users-icon" />

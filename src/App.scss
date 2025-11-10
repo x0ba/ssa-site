@@ -243,7 +243,9 @@ a {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    transform: rotate(0deg);
   }
 }
 
@@ -251,14 +253,16 @@ a {
 .cards-row1,
 .cards-row2 {
   max-width: 70vw;
-  margin: 0 auto 2.2rem;
+  margin: 2rem auto 2.2rem;
 
   @media (max-width: 768px) {
     max-width: 90vw;
+    margin: 1.5rem auto 2rem;
   }
 
   @media (max-width: 576px) {
     max-width: 95vw;
+    margin: 1rem auto 1.5rem;
   }
 }
 
@@ -275,9 +279,8 @@ a {
     transform: rotate(0deg);
   }
 
-  @media (max-width: 767px) {
-    transform: rotate(0deg);
-    margin-bottom: 1rem;
+  @media (max-width: 991px) {
+    transform: rotate(0deg) !important;
   }
 
   .card-title,
@@ -288,14 +291,26 @@ a {
 
 .card-1 {
   transform: rotate(-2deg);
+
+  @media (min-width: 992px) {
+    transform: rotate(-2deg);
+  }
 }
 
 .card-2 {
   transform: rotate(2deg);
+
+  @media (min-width: 992px) {
+    transform: rotate(2deg);
+  }
 }
 
 .card-3 {
   transform: rotate(-0.5deg);
+
+  @media (min-width: 992px) {
+    transform: rotate(-0.5deg);
+  }
 }
 
 .music-icon,
@@ -336,9 +351,17 @@ a {
 
 .accordion {
   margin-top: 2rem;
-  max-width: 73vw;
+  max-width: 70vw;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 768px) {
+    max-width: 90vw;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 95vw;
+  }
 
   .accordion-item {
     background-color: transparent;
