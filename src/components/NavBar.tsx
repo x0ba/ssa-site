@@ -21,11 +21,11 @@ const NavItems: NavItem[] = [
   },
   {
     text: "Ensemble",
-    link: "#",
+    link: "/ensemble",
   },
   {
     text: "Join",
-    link: "#",
+    link: "/join",
   },
 ];
 
@@ -40,7 +40,7 @@ const DropdownItems: NavItem[] = [
   },
   {
     text: "Support",
-    link: "#",
+    link: "/support",
   },
 ];
 
