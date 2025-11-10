@@ -9,7 +9,7 @@ $danger: #181a18;
 $light: $primary;
 $body-bg: $primary;
 $body-color: #212529;
-$font-family-base: "Inter", serif;
+$font-family-base: "Open Sans", sans-serif;
 
 // Custom theme colors
 $theme-colors: (
@@ -628,6 +628,23 @@ a {
 
   h3 {
     color: $danger;
+  }
+
+  hr {
+    border: 0;
+    border-top: 3px dashed $danger;
+    margin: 2rem auto;
+    max-width: 70vw;
+    opacity: 1;
+
+    @media (max-width: 768px) {
+      max-width: 90vw;
+      margin: 1.5rem auto;
+    }
+
+    @media (max-width: 576px) {
+      max-width: 95vw;
+    }
   }
 
   .alumni-list {

@@ -10,6 +10,7 @@ const Board = () => {
       <NavBar selectedItem="Board Members" />
       <Container className="board-content" fluid>
         <BoardCards />
+        <hr />
         <PastBoard />
       </Container>
       <Footer />
