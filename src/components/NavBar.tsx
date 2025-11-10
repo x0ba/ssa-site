@@ -17,7 +17,7 @@ const NavItems: NavItem[] = [
   },
   {
     text: "Events",
-    link: "#",
+    link: "/events",
   },
   {
     text: "Ensemble",
