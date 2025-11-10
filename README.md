@@ -13,7 +13,7 @@ WIP, a landing page for the Symphonic Student Association at UCSD
 
 ### Executing program
 
-Run `npm run dev`
+Run `npm run dev` in the frontend folder
 
 ### Additional Installations
 
