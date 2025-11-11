@@ -25,7 +25,7 @@ const Footer = () => {
             <Col mx-5="true">
               <Stack>
                 <Image
-                  src="/assets/favicon/android-chrome-512x512.png"
+                  src="/assets/nav-icon.webp"
                   alt="SSA Logo"
                   className="footer-logo mb-2"
                   width={128}
