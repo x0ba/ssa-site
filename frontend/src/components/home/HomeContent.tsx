@@ -4,7 +4,7 @@ import { Stars } from "lucide-react";
 const HomeContent = () => {
   return (
     <Container fluid className="horizontal-container">
-      <Row className="align-items-center">
+      <Row className="align-items-center justify-content-center w-100">
         <Col xs={12} md={6} className="text-content">
           <Badge bg="dark" className="date">
             <Stars size={18} /> est. 2018
@@ -21,7 +21,7 @@ const HomeContent = () => {
             </p>
           </div>
         </Col>
-        <Col xs={12} md={6}>
+        <Col xs={12} md={6} className="text-center">
           <Image
             src="/assets/hero.webp"
             alt="SSA Ensemble"
