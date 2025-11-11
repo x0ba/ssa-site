@@ -60,7 +60,7 @@ const NavBar = ({ selectedItem }: Props) => {
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
           <img
-            src="/assets/favicon/android-chrome-512x512.png"
+            src="/assets/nav-icon.webp"
             alt="SSA Logo"
             className="d-inline-block align-text-top navbar-logo"
           />
