@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <NavBar selectedItem="Home" />
+      <NavBar />
       <Home />
       <Footer />
     </>
