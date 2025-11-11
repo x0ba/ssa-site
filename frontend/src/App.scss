@@ -749,12 +749,28 @@ a {
     p {
       color: $primary;
     }
+
+    @media (max-width: 767px) {
+      text-align: center;
+
+      h4 {
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .nav {
+        align-items: center;
+      }
+    }
   }
 
   .footer-link {
     color: $primary !important;
     text-decoration: underline;
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 
     &:hover,
     &:focus {
@@ -764,6 +780,11 @@ a {
 
     &:visited {
       color: $primary !important;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: center;
+      padding: 0.25rem 0;
     }
   }
 }

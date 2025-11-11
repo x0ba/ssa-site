@@ -22,12 +22,16 @@ const Footer = () => {
       <footer className="footer">
         <Container fluid>
           <Row className="footer-content p-4">
-            <Col mx-5="true">
+            <Col
+              xs={12}
+              md={4}
+              className="mb-4 mb-md-0 text-center text-md-start"
+            >
               <Stack>
                 <Image
                   src="/assets/nav-icon.webp"
                   alt="SSA Logo"
-                  className="footer-logo mb-2"
+                  className="footer-logo mb-2 mx-auto mx-md-0"
                   width={128}
                   height={128}
                 />
@@ -37,7 +41,11 @@ const Footer = () => {
                 <p>© 2025 SSA @ UCSD. All rights reserved.</p>
               </Stack>
             </Col>
-            <Col>
+            <Col
+              xs={12}
+              md={4}
+              className="mb-4 mb-md-0 text-center text-md-start"
+            >
               <Nav className="flex-column fs-8">
                 <h4>Links</h4>
                 <NavLink
@@ -66,7 +74,7 @@ const Footer = () => {
                 </NavLink>
               </Nav>
             </Col>
-            <Col>
+            <Col xs={12} md={4} className="text-center text-md-start">
               <Nav className="flex-column fs-8">
                 <h4>Contact Us!</h4>
                 <NavLink
