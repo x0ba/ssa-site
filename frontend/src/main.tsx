@@ -5,12 +5,6 @@ import "./App.scss";
 import { BrowserRouter } from "react-router";
 import AppRoutes from "./components/AppRoutes.tsx";
 
-// Load Google Fonts stylesheet asynchronously
-const googleFontsLink = document.getElementById("google-fonts");
-if (googleFontsLink) {
-  googleFontsLink.setAttribute("media", "all");
-}
-
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
