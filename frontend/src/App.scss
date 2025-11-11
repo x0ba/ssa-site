@@ -49,8 +49,22 @@ $navbar-dark-brand-hover-color: rgba(255, 255, 255, 1);
   $navbar-dark-brand-hover-color: $navbar-dark-brand-hover-color
 );
 
-// Fonts are loaded via Google Fonts in index.html
-// No @font-face declarations needed
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/open-sans-v44-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/open-sans-v44-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 // ============================================================================
 // GLOBAL STYLES
@@ -307,9 +321,20 @@ a {
     transform: rotate(0deg) !important;
   }
 
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
   .card-title,
   .card-text {
     color: #000;
+  }
+
+  .card-text {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
 }
 
