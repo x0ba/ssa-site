@@ -27,6 +27,8 @@ const HomeContent = () => {
             alt="SSA Ensemble"
             fetchPriority="high"
             className="hero-image"
+            width={2048}
+            height={1367}
             fluid
           />
         </Col>
