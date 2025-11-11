@@ -4,7 +4,10 @@ const HomeAccordions = () => {
   return (
     <>
       <Accordion className="accordion" defaultActiveKey="-1">
-        <h3>Frequently Asked Questions</h3> <br />
+        <h3>
+          <b>Frequently Asked Questions</b>
+        </h3>{" "}
+        <br />
         <Accordion.Item eventKey="0">
           <Accordion.Header>
             Do I need to have prior experience in music?
