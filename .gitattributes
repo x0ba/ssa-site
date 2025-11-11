@@ -2,3 +2,5 @@
 **/**.jpeg filter=lfs diff=lfs merge=lfs -text
 **/**.png filter=lfs diff=lfs merge=lfs -text
 **/**.webp filter=lfs diff=lfs merge=lfs -text
+frontend/public/dist/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf filter=lfs diff=lfs merge=lfs -text
+frontend/public/dist/fonts/OpenSans-VariableFont_wdth,wght.ttf filter=lfs diff=lfs merge=lfs -text
