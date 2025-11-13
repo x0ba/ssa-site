@@ -13,7 +13,6 @@ const PageTransition = ({ children, locationKey }: PageTransitionProps) => {
   const isInitialMount = useRef(true);
 
   useEffect(() => {
-    // Mark initial mount as complete after first render
     if (isInitialMount.current) {
       isInitialMount.current = false;
     }

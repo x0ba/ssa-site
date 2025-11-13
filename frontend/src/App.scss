@@ -660,7 +660,33 @@ a {
   }
 
   .alumni-list {
-    margin-left: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .alumni-cards-row {
+    margin: 0 auto;
+  }
+
+  .alumni-card {
+    border: 2px dashed $danger;
+    text-align: center;
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
   }
 
   .board-card {

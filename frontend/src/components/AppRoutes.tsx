@@ -21,6 +21,7 @@ function AppRoutes() {
   // Preload the initial route component immediately
   useEffect(() => {
     const preloadComponent = async () => {
+      // ts lowkey jank af but it works 🤷
       try {
         switch (initialPath) {
           case "/board":
