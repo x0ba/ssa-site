@@ -1,5 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route, useLocation } from "react-router";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "../App.scss";
 import PageTransition from "./PageTransition.tsx";
 import LoadingScreen from "./LoadingScreen.tsx";
 import NavBar from "./NavBar.tsx";
@@ -13,6 +15,7 @@ const EventsLazy = lazy(() => import("./events/Events.tsx"));
 const EnsembleLazy = lazy(() => import("./ensemble/Ensemble.tsx"));
 const SupportLazy = lazy(() => import("./Support.tsx"));
 const JoinLazy = lazy(() => import("./join/Join.tsx"));
+const DashboardLazy = lazy(() => import("./dashboard/Dashboard.tsx"));
 
 function AppRoutes() {
   const location = useLocation();
@@ -41,6 +44,9 @@ function AppRoutes() {
             break;
           case "/join":
             await import("./join/Join.tsx");
+            break;
+          case "/dashboard":
+            await import("./dashboard/Dashboard.tsx");
             break;
         }
       } catch (error) {
@@ -130,6 +136,18 @@ function AppRoutes() {
               ) : (
                 <Suspense fallback={<LoadingScreen />}>
                   <JoinLazy />
+                </Suspense>
+              )
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              isInitialRoute("/dashboard") ? (
+                <DashboardLazy />
+              ) : (
+                <Suspense fallback={<LoadingScreen />}>
+                  <DashboardLazy />
                 </Suspense>
               )
             }

@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@react-email/components": "^1.0.0",
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-js": "^2.81.1",
     "bootstrap": "^5.3.8",
     "firebase": "^12.5.0",
     "lucide-react": "^0.553.0",

@@ -9,8 +9,8 @@ const PastEvents = () => {
       <Row className="row1">
         {events
           .filter((event) => !event.upcoming)
-          .map((event) => (
-            <Col key={event.name} xs={12} sm={6} md={3} className="mb-4">
+          .map((event, index) => (
+            <Col key={index} xs={12} sm={6} md={3} className="mb-4">
               <Card className="h-100 event-card">
                 <Card.Img
                   variant="top"

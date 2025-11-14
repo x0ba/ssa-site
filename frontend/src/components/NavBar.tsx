@@ -104,6 +104,16 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Collapse className="justify-content-end">
+          <Nav.Link
+            as={Link}
+            to="/dashboard"
+            className="dashboard-link"
+            active={isActive("/dashboard")}
+          >
+            Dashboard
+          </Nav.Link>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
